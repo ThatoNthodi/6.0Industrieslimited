@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6.0 Industries | AI-enabled automation for everyday workflows</title>
+<meta name="description" content="6.0 Industries helps companies in every industry build AI-enabled automated systems that remove repetitive work, cut errors and speed up everyday workflows.">
+<link rel="icon" type="image/png" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B2A4A;--teal:#0F8C96;--tealL:#E6F4F5;--ink:#14212e;--mute:#566574;--line:#dbe3ea;--bg:#f7f9fb;--white:#fff;--hot:#E07A28}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 "Manrope","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:var(--teal)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;font-size:20px;color:var(--navy);text-decoration:none}
+.brand img{height:38px;width:auto;display:block}
+.brand b{color:var(--teal)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center}
+nav ul a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
+@media (max-width:760px){nav ul li:not(:last-child){display:none}}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;background:var(--hot);color:#14212e;font:inherit;font-weight:700;text-decoration:none;border:0;cursor:pointer}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn.alt{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
+:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#1b5a86 0,transparent 45%),var(--navy);color:#fff;padding:80px 0 72px}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.hero .wm{position:absolute;right:-70px;top:50%;width:600px;max-width:90vw;transform:translateY(-50%) rotate(-8deg);opacity:.06;pointer-events:none}
+.ring{position:absolute;border-radius:50%;border:2px solid rgba(127,214,220,.16);pointer-events:none}
+.r1{width:420px;height:420px;right:-120px;top:-150px}.r2{width:260px;height:260px;left:-90px;bottom:-130px;border-color:rgba(224,122,40,.3)}
+.eyebrow{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#7fd6dc;margin:0 0 14px}
+.hero h1{font-size:clamp(36px,5.6vw,60px);font-weight:800}
+.hero .lead{font-size:19px;color:#d4e2ee;max-width:48ch;margin:20px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.flowcard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:20px}
+.flowcard h3{font:600 15px/1.3 "Manrope",Arial,sans-serif;color:#cfe0ee;letter-spacing:0;margin-bottom:12px}
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:8px;counter-reset:s}
+.flow li{counter-increment:s;display:flex;gap:12px;align-items:center;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:8px;font-weight:600;font-size:15px;animation:hl 8s infinite}
+.flow li::before{content:counter(s);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(127,214,220,.22);color:#9fe3e8;font-size:13px;flex:none}
+.flow li small{display:block;font-weight:400;color:#b9cde0;font-size:13px}
+.flow li:nth-child(2){animation-delay:1.4s}.flow li:nth-child(3){animation-delay:2.8s}.flow li:nth-child(4){animation-delay:4.2s}.flow li:nth-child(5){animation-delay:5.6s}
+@keyframes hl{0%{background:transparent;border-color:rgba(255,255,255,.14)}5%,20%{background:rgba(127,214,220,.18);border-color:#7fd6dc}28%,100%{background:transparent;border-color:rgba(255,255,255,.14)}}
+@media (prefers-reduced-motion:reduce){.flow li{animation:none}}
+section{padding:68px 0}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--navy);margin-bottom:10px}
+.kicker{color:var(--mute);max-width:64ch;margin:0 0 32px;font-size:17px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:21px;color:var(--navy);margin-bottom:6px}
+.card p{margin:0;color:var(--mute)}
+.ico{width:42px;height:42px;border-radius:10px;background:var(--tealL);color:var(--teal);display:grid;place-items:center;font:800 18px "Bricolage Grotesque",Arial,sans-serif;margin-bottom:14px}
+.pain{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:46px 0}
+.pain h2{font-size:clamp(24px,3.2vw,32px)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--bg);border:1px solid var(--line);padding:8px 16px;border-radius:99px;font-weight:600;font-size:15px;color:var(--navy)}
+.ind h3{font-size:19px}
+.ind ul{margin:10px 0 0;padding-left:18px;color:var(--mute);font-size:15px}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:99px;background:var(--tealL);color:#0b6a73;margin-bottom:10px}
+.steps{counter-reset:p}
+.step{counter-increment:p;position:relative;padding-top:62px}
+.step::before{content:counter(p);position:absolute;top:18px;left:24px;font:800 30px "Bricolage Grotesque",Arial,sans-serif;color:var(--hot)}
+.dark{background:var(--navy);color:#fff}
+.dark h2{color:#fff}.dark .kicker{color:#cfe0ee}
+.metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.metrics span{border:1px solid rgba(255,255,255,.3);padding:8px 16px;border-radius:99px;font-weight:600;font-size:15px}
+.person .role{color:var(--teal);font-weight:700;font-size:14px;margin:2px 0 8px}
+.person p{font-size:15px}
+form.f{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--white);color:var(--ink);padding:26px;border-radius:12px}
+@media (max-width:640px){form.f{grid-template-columns:1fr}}
+.f .full{grid-column:1/-1}
+.f label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}
+.f input[type=text],.f input[type=email],.f select,.f textarea{width:100%;padding:10px;font:inherit;border:1px solid #c5d0da;border-radius:6px;background:#fff;color:var(--ink)}
+.f textarea{min-height:110px;resize:vertical}
+.f .chk{display:flex;gap:8px;align-items:flex-start;font-weight:400}
+.f .chk input{width:18px;height:18px;margin-top:3px}
+.fine{font-size:12px;color:var(--mute);margin:8px 0 0}
+.sent{background:#e3f4e8;color:#1c6b36;padding:12px 16px;border-radius:8px;margin-bottom:14px;font-weight:600}
+[hidden]{display:none!important}
+.links{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px}.links a{color:#9fe3e8;font-weight:600}
+footer{padding:26px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center}
+.fb{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;color:var(--navy)}.fb img{height:30px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top"><img src="logo-mark.png" alt=""><span>6.0 <b>Industries</b></span></a>
+<ul><li><a href="#services">What we build</a></li><li><a href="#industries">Industries</a></li><li><a href="#process">How it works</a></li><li><a href="#team">Team</a></li><li><a class="btn sm" href="#contact">Free workflow review</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top">
+<span class="ring r1"></span><span class="ring r2"></span><img class="wm" src="logo-mark-white.png" alt="">
+<div class="wrap">
+<div>
+<p class="eyebrow">AI-enabled automation for every industry</p>
+<h1>Automate the work that slows your company down.</h1>
+<p class="lead">We design and build AI-enabled systems that take over repetitive, error-prone workflows, so your people can focus on the work that matters.</p>
+<div class="cta"><a class="btn" href="#contact">Book a free workflow review</a><a class="btn alt" href="#process">See how it works</a></div>
+</div>
+<aside class="flowcard" aria-label="Example automated workflow">
+<h3>Example: a customer request, handled automatically</h3>
+<ol class="flow">
+<li><span>Request arrives<small>WhatsApp, email, form or phone</small></span></li>
+<li><span>AI reads and sorts it<small>Understands what is needed</small></span></li>
+<li><span>Rules and checks run<small>Approvals, limits, missing details</small></span></li>
+<li><span>Action is taken<small>Record updated, reply sent, task created</small></span></li>
+<li><span>Your team is told<small>Only when a person is needed</small></span></li>
+</ol>
+</aside>
+</div>
+</header>
+
+<div class="pain"><div class="wrap">
+<h2>Where your team’s time disappears</h2>
+<p class="kicker" style="margin-bottom:18px">If any of these sound familiar, there is probably a workflow worth automating.</p>
+<div class="chips"><span>Retyping data between systems</span><span>Chasing approvals</span><span>Spreadsheets nobody trusts</span><span>Slow replies to customers</span><span>Paper forms and manual filing</span><span>Reports built by hand every week</span><span>Missed follow-ups</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>What we build for you</h2>
+<p class="kicker">Practical, working systems built around how your business already runs. We pick the simplest tool that solves the problem.</p>
+<div class="grid g3">
+<div class="card"><div class="ico">1</div><h3>AI assistants and chatbots</h3><p>WhatsApp and web assistants that answer questions, take requests and guide customers and staff, 24 hours a day.</p></div>
+<div class="card"><div class="ico">2</div><h3>Document and data processing</h3><p>AI that reads invoices, forms, emails and records, pulls out what matters and files it in the right place.</p></div>
+<div class="card"><div class="ico">3</div><h3>Workflow automation</h3><p>Connected systems that route work, trigger approvals, send reminders and remove manual hand-offs.</p></div>
+<div class="card"><div class="ico">4</div><h3>Dashboards and reporting</h3><p>Live dashboards and automatic reports, so leaders see what is happening without waiting for a spreadsheet.</p></div>
+<div class="card"><div class="ico">5</div><h3>Prediction and early warning</h3><p>Models that spot problems early, from equipment and safety risks to demand and delays, and recommend what to do.</p></div>
+<div class="card"><div class="ico">6</div><h3>Custom software and integrations</h3><p>Web and mobile tools, plus integrations that make your existing systems work together.</p></div>
+</div>
+</div></section>
+
+<section id="industries" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+<h2>One approach, every industry</h2>
+<p class="kicker">Every industry has workflows that repeat all day. Here are examples of what we can automate.</p>
+<div class="grid g3 ind">
+<div class="card"><h3>Health</h3><ul><li>Patient intake and follow-up reminders</li><li>Claims and billing checks</li><li>Clinical data preparation</li></ul></div>
+<div class="card"><h3>Mining</h3><ul><li>Shift and safety reporting</li><li>Heat and risk early warnings</li><li>Compliance records</li></ul></div>
+<div class="card"><h3>Construction</h3><ul><li>Site safety checks and incident logs</li><li>Subcontractor onboarding</li><li>Progress and cost reporting</li></ul></div>
+<div class="card"><h3>Logistics and transport</h3><ul><li>Dispatch and delivery updates</li><li>Proof-of-delivery processing</li><li>Customer status messages</li></ul></div>
+<div class="card"><h3>Manufacturing and retail</h3><ul><li>Orders, stock and supplier follow-up</li><li>Quality and downtime reports</li><li>Customer service assistants</li></ul></div>
+<div class="card"><h3>Government and services</h3><ul><li>Service request handling</li><li>Records capture and clean-up</li><li>Public dashboards and alerts</li></ul></div>
+</div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2>How it works</h2>
+<p class="kicker">A simple path from problem to a working system. We start small, prove it works, then grow.</p>
+<div class="grid g4 steps">
+<div class="card step"><h3>Map</h3><p>A free workflow review. We learn how the work flows today and where time and errors are lost.</p></div>
+<div class="card step"><h3>Design</h3><p>We choose what to automate first, where AI helps, and where a person stays in control.</p></div>
+<div class="card step"><h3>Build and pilot</h3><p>We build and connect the system, then test it with a small team on real work.</p></div>
+<div class="card step"><h3>Run and improve</h3><p>We train your people, monitor results and keep improving the system as your needs change.</p></div>
+</div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<h2>Built to be trusted</h2>
+<p class="kicker">Automation should make work safer and clearer, not riskier.</p>
+<div class="grid g3">
+<div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">People stay in control</h3><p style="color:#cfe0ee">AI handles the routine. Anything unusual or important goes to a person to decide.</p></div>
+<div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">Privacy by design</h3><p style="color:#cfe0ee">We collect only what is needed and design for POPIA, with extra care for personal and health data.</p></div>
+<div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.2)"><h3 style="color:#fff">Built for Africa</h3><p style="color:#cfe0ee">WhatsApp-first, offline-ready and multilingual, so tools work in the field and on low bandwidth.</p></div>
+</div>
+<p style="margin:26px 0 8px;font-weight:700;color:#7fd6dc">What we measure together</p>
+<div class="metrics"><span>Hours saved per week</span><span>Fewer errors</span><span>Faster response times</span><span>Cost per transaction</span></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Proof from our own platforms</h2>
+<p class="kicker">We build and run our own products with the same methods we use for clients.</p>
+<div class="grid g2">
+<div class="card"><span class="tag">Prototype built</span><h3>Zanti Heat</h3><p>An early-warning and decision-support system that turns site conditions and crew context into graded, multilingual alerts, and keeps working offline.</p><p style="margin-top:12px"><a href="https://thatonthodi.github.io/Zanti-heat-demo/"><b>Try the interactive demo &rarr;</b></a></p></div>
+<div class="card"><span class="tag">In development</span><h3>Sentinel HealthOS</h3><p>An Earth-observation, climate and AI platform that predicts risk and recommends action to decision-makers.</p><p style="margin-top:12px"><a href="https://github.com/6-0-Industries/Sentinel-healthos"><b>View the project &rarr;</b></a></p></div>
+</div>
+</div></section>
+
+<section id="team" style="padding-top:0"><div class="wrap">
+<h2>Leadership</h2>
+<p class="kicker">A small, focused team combining clinical, pharmacy and technology expertise.</p>
+<div class="grid g3 person">
+<div class="card"><h3>Thato Lawrence Nthodi</h3><p class="role">Founder and CEO</p><p>HPCSA-registered clinical associate and AI operations specialist building AI-powered platforms and automations.</p></div>
+<div class="card"><h3>Mookoli Makakole</h3><p class="role">Co-founder and Strategic Executive</p><p>Pharmacist leading business strategy, partnerships and commercial development.</p></div>
+<div class="card"><h3>Kuselwa Langa</h3><p class="role">Executive Assistant, CEO Office</p><p>Executive support, coordination, communications and administration.</p></div>
+</div>
+</div></section>
+
+<section class="dark" id="contact"><div class="wrap">
+<h2>Book a free workflow review</h2>
+<p class="kicker">Tell us which workflow slows your team down. We will get back to you to talk it through. We are also open to pilots, partnerships and investors.</p>
+<p id="sent" class="sent" role="status" hidden>Thank you. Your message has been sent and we will be in touch.</p>
+<form class="f" action="https://formsubmit.co/nthodithato@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New workflow review request: 6.0 Industries website">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://6-0-industries.github.io/?sent=1#contact">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div><label for="n">Full name</label><input type="text" id="n" name="Name" required autocomplete="name"></div>
+<div><label for="o">Company</label><input type="text" id="o" name="Company" required autocomplete="organization"></div>
+<div><label for="e">Email</label><input type="email" id="e" name="email" required autocomplete="email"></div>
+<div><label for="i">Industry</label><select id="i" name="Industry" required><option value="">Choose one</option><option>Health</option><option>Mining</option><option>Construction</option><option>Logistics and transport</option><option>Manufacturing</option><option>Retail</option><option>Agriculture</option><option>Government and services</option><option>Other</option></select></div>
+<div><label for="s">Company size</label><select id="s" name="Company size"><option value="">Choose one</option><option>1 to 10 people</option><option>11 to 50 people</option><option>51 to 200 people</option><option>More than 200 people</option></select></div>
+<div><label for="t">I am interested in</label><select id="t" name="Interest"><option>A workflow review</option><option>A pilot for my site</option><option>Partnership</option><option>Investing in 6.0 Industries</option><option>Something else</option></select></div>
+<div class="full"><label for="m">Which workflow slows your team down?</label><textarea id="m" name="Workflow challenge"></textarea></div>
+<div class="full"><label class="chk" for="c"><input type="checkbox" id="c" name="Consent" value="Yes" required><span>I agree that 6.0 Industries may contact me about this enquiry.</span></label></div>
+<div class="full"><button class="btn" type="submit">Send request</button>
+<p class="fine">Your details are used only to respond to your enquiry. The form is delivered by FormSubmit.</p></div>
+</form>
+<div class="links"><a href="mailto:nthodithato@gmail.com">nthodithato@gmail.com</a><a href="https://www.linkedin.com/in/thato-nthodi">LinkedIn</a><a href="https://github.com/6-0-Industries">GitHub</a></div>
+</div></section>
+
+<footer><div class="wrap"><span class="fb"><img src="logo-mark.png" alt="">6.0 Industries Limited</span><span>&copy; 2026 6.0 Industries Limited. Tshwane, South Africa.</span></div></footer>
+<script>if(location.search.indexOf('sent=1')>-1){document.getElementById('sent').hidden=false}</script>
+</body>
+</html>
